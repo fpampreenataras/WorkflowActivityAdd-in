@@ -1,0 +1,71 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Common.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="arasPrimaryLinkItemId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">arasPrimaryLinkItemId</Value>
+    </Setting>
+    <Setting Name="ArasURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">url</Value>
+    </Setting>
+    <Setting Name="ARASdb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">db</Value>
+    </Setting>
+    <Setting Name="ArasInfoNodeName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ArasInfo</Value>
+    </Setting>
+    <Setting Name="getWorkFlowAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Workflow" action="get"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getWorkFlowProcessAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Workflow Process" action="get"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getWorkflowMapNameAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Workflow Map" action="get" select="name"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getActivitiesAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Workflow Process Activity" action="get" select="related_id"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getTasksAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Activity Task" action="get" select="sequence,is_required,description"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getVotePaths" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Workflow Process Path" action="get"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getActivityAssignement" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Activity Assignment" action="get"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getLoggedInIdentityID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="User" action="get" select="owned_by_id"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getStateName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Document" action="get" select="state,current_state"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="ArasDocumentId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">arasDocumentId</Value>
+    </Setting>
+    <Setting Name="getLifeCycleName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Life Cycle Map" action="get" select="description"&gt;&lt;Relationships&gt;&lt;Item type="Life Cycle State" action="get"&gt;&lt;id&gt;&lt;/id&gt;&lt;/Item&gt;&lt;/Relationships&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="promoteAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Document" action="promoteItem" where="document.id=&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getCurrentUserIDs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Identity" action="GetCurrentUserIdentities"&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getNextStates" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Life Cycle Transition" action="get" &gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="ArasConfigId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">arasDocumentConfigId</Value>
+    </Setting>
+    <Setting Name="getMyTasks" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;
+&lt;Item type="InBasket Task" action="get"&gt;
+&lt;status condition="eq"&gt;Active&lt;/status&gt;
+  &lt;my_assignment condition="eq"&gt;1&lt;/my_assignment&gt;
+  &lt;/Item&gt;
+&lt;/AML&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

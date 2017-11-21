@@ -1,0 +1,92 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ActivityForm.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="arasPrimaryLinkItemId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">arasPrimaryLinkItemId</Value>
+    </Setting>
+    <Setting Name="ArasURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">url</Value>
+    </Setting>
+    <Setting Name="ARASdb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">db</Value>
+    </Setting>
+    <Setting Name="ArasInfoNodeName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ArasInfo</Value>
+    </Setting>
+    <Setting Name="ArasPrimaryLinkIDName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">arasPrimaryLinkItemId</Value>
+    </Setting>
+    <Setting Name="getWorkFlowAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Workflow" action="get"&gt;&lt;source_id&gt;&lt;/source_id&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getWorkFlowProcessAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;&lt;Item type="Workflow Process" action="get"&gt;&lt;id&gt;&lt;/id&gt;&lt;/Item&gt;&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getWorkflowMapNameAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;
+&lt;Item type="Workflow Map" action="get" select="name"&gt;
+&lt;id&gt;&lt;/id&gt;
+&lt;/Item&gt;
+
+&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getActivitiesAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;
+&lt;Item type="Workflow Process Activity" action="get" select="related_id"&gt;
+&lt;source_id&gt;&lt;/source_id&gt;
+&lt;/Item&gt;
+&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getTasksAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;
+&lt;Item type="Activity Task" action="get" select="sequence,is_required,description"&gt;
+&lt;source_id&gt;&lt;/source_id&gt;
+&lt;/Item&gt;
+
+&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getVotePaths" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;
+&lt;Item type="Workflow Process Path" action="get"&gt;
+&lt;source_id&gt;&lt;/source_id&gt;
+&lt;/Item&gt;
+
+&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="completeActivityAML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;
+&lt;Item type="Activity" action="EvaluateActivity"&gt;
+&lt;Activity&gt;&lt;/Activity&gt;
+&lt;ActivityAssignment&gt;&lt;/ActivityAssignment&gt;
+&lt;Paths&gt;
+&lt;Path&gt;&lt;/Path&gt;
+&lt;/Paths&gt;
+&lt;Tasks&gt;
+&lt;Task id='' completed="1"&gt;&lt;/Task&gt;
+&lt;/Tasks&gt;
+&lt;Variables&gt;
+&lt;/Variables&gt;
+&lt;Authentication mode=""&gt;&lt;/Authentication&gt;
+&lt;Comment&gt;&lt;/Comment&gt;
+&lt;Complete&gt;1&lt;/Complete&gt;
+&lt;/Item&gt;
+&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getActivityAssignement" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;
+&lt;Item type="Activity Assignment" action="get"&gt;
+&lt;source_id&gt;&lt;/source_id&gt;
+&lt;/Item&gt;
+
+&lt;/AML&gt;</Value>
+    </Setting>
+    <Setting Name="getLoggedInIdentityID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;AML&gt;
+&lt;Item type="User" action="get" select="owned_by_id"&gt;
+&lt;id&gt;&lt;/id&gt;
+&lt;/Item&gt;
+&lt;/AML&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
