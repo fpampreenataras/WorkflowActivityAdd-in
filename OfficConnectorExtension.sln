@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeConnectorExtensionAdd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeConnectorExtensionAddinWord", "WordAddIn1\OfficeConnectorExtensionAddinWord.csproj", "{B308D1AF-7AD3-4169-9EB5-B009A47C4EBE}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{8B6C65B0-C757-4B34-AF77-54563A21F23B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,9 +27,6 @@ Global
 		{B308D1AF-7AD3-4169-9EB5-B009A47C4EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B308D1AF-7AD3-4169-9EB5-B009A47C4EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B308D1AF-7AD3-4169-9EB5-B009A47C4EBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B6C65B0-C757-4B34-AF77-54563A21F23B}.Debug|Any CPU.ActiveCfg = Release
-		{8B6C65B0-C757-4B34-AF77-54563A21F23B}.Debug|Any CPU.Build.0 = Release
-		{8B6C65B0-C757-4B34-AF77-54563A21F23B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
