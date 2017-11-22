@@ -4,10 +4,9 @@ using Aras.IOM;
 using Settings = Common.Properties.Settings;
 using System.Xml;
 using System.IO;
-using Common;
 using System.Collections.Generic;
 
-namespace WorkflowAddinCommon
+namespace OfficeConnectorExtensionCommon
 {
     public partial class ActivityForm : Form
     {

@@ -1,6 +1,6 @@
 ﻿using Word = Microsoft.Office.Interop.Word;
 using Microsoft.Office.Tools.Ribbon;
-using WorkflowAddinCommon;
+using OfficeConnectorExtensionCommon;
 
 namespace WordAddIn1
 {
@@ -9,6 +9,7 @@ namespace WordAddIn1
         private Utilities u = new Utilities();
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
+            //Add these events to trigger when a file is opened/closed and what to do with the 3 buttons in the Ribbon
             Globals.ThisAddIn.Application.DocumentOpen += new Word.ApplicationEvents4_DocumentOpenEventHandler(Application_Open);
             Globals.ThisAddIn.Application.DocumentBeforeClose += new Word.ApplicationEvents4_DocumentBeforeCloseEventHandler(Application_Close);
             Globals.Ribbons.WorkflowAddinRibbon.CompleteTaskButton.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(Complete_Task);
@@ -70,7 +71,7 @@ namespace WordAddIn1
         protected override Microsoft.Office.Tools.Ribbon.IRibbonExtension[] CreateRibbonObjects()
 
         {
-            return new Microsoft.Office.Tools.Ribbon.IRibbonExtension[] { new WorkflowAddinCommon.WorkflowAddinRibbon(Globals.Factory.GetRibbonFactory()) };
+            return new Microsoft.Office.Tools.Ribbon.IRibbonExtension[] { new OfficeConnectorExtensionCommon.OfficeConnectorExtensionAddinRibbon(Globals.Factory.GetRibbonFactory()) };
 
         }
 
@@ -79,11 +80,11 @@ namespace WordAddIn1
 
     {
 
-        internal WorkflowAddinCommon.WorkflowAddinRibbon WorkflowAddinRibbon
+        internal OfficeConnectorExtensionCommon.OfficeConnectorExtensionAddinRibbon WorkflowAddinRibbon
 
         {
 
-            get { return this.GetRibbon<WorkflowAddinCommon.WorkflowAddinRibbon>(); }
+            get { return this.GetRibbon<OfficeConnectorExtensionCommon.OfficeConnectorExtensionAddinRibbon>(); }
 
         }
 

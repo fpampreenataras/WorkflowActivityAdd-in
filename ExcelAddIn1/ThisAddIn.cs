@@ -1,5 +1,5 @@
 ﻿using Excel = Microsoft.Office.Interop.Excel;
-using WorkflowAddinCommon;
+using OfficeConnectorExtensionCommon;
 using Microsoft.Office.Interop.Excel;
 using Microsoft.Office.Tools.Ribbon;
 
@@ -10,6 +10,7 @@ namespace ExcelAddIn1
         private Utilities u = new Utilities();
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
+            //Add these events to trigger when a file is opened/closed and what to do with the 3 buttons in the Ribbon
             Globals.ThisAddIn.Application.WorkbookOpen += new AppEvents_WorkbookOpenEventHandler(Application_WorkbookOpen);
             Globals.ThisAddIn.Application.WorkbookBeforeClose += new AppEvents_WorkbookBeforeCloseEventHandler(Application_WorkbookClose);
             Globals.Ribbons.WorkflowAddinRibbon.CompleteTaskButton.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(Complete_Task);
@@ -70,7 +71,7 @@ namespace ExcelAddIn1
         protected override Microsoft.Office.Tools.Ribbon.IRibbonExtension[] CreateRibbonObjects()
 
         {
-            return new Microsoft.Office.Tools.Ribbon.IRibbonExtension[] { new WorkflowAddinCommon.WorkflowAddinRibbon(Globals.Factory.GetRibbonFactory()) };
+            return new Microsoft.Office.Tools.Ribbon.IRibbonExtension[] { new OfficeConnectorExtensionCommon.OfficeConnectorExtensionAddinRibbon(Globals.Factory.GetRibbonFactory()) };
 
         }
 
@@ -80,11 +81,11 @@ namespace ExcelAddIn1
 
     {
 
-        internal WorkflowAddinCommon.WorkflowAddinRibbon WorkflowAddinRibbon
+        internal OfficeConnectorExtensionCommon.OfficeConnectorExtensionAddinRibbon WorkflowAddinRibbon
 
         {
 
-            get { return this.GetRibbon<WorkflowAddinCommon.WorkflowAddinRibbon>(); }
+            get { return this.GetRibbon<OfficeConnectorExtensionCommon.OfficeConnectorExtensionAddinRibbon>(); }
 
         }
 

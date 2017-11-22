@@ -9,12 +9,12 @@ using System.Linq;
 using Common;
 using System.IO;
 
-namespace WorkflowAddinCommon
+namespace OfficeConnectorExtensionCommon
 {
     public class Utilities
     {
         Innovator inn;
-        public void Refresh_ribbon(Core.DocumentProperties properties, WorkflowAddinRibbon MyRibbon)
+        public void Refresh_ribbon(Core.DocumentProperties properties, OfficeConnectorExtensionAddinRibbon MyRibbon)
         {
             if ((inn = Connect_to_Aras(MyRibbon)) != null)
             {
@@ -48,7 +48,6 @@ namespace WorkflowAddinCommon
             }
         }
 
-
         private void UpdateLifeCycleRibbonName(string id, RibbonLabel lifeCycleLabel)
         {
            
@@ -70,7 +69,7 @@ namespace WorkflowAddinCommon
             }
         }
 
-        public void Application_close(string filename, WorkflowAddinRibbon MyRibbon)
+        public void Application_close(string filename, OfficeConnectorExtensionAddinRibbon MyRibbon)
         {
             if (filename.Contains("mso_viablecopy"))  // hack to get around office connector opening and closing document when doing a Save to Aras
             {
@@ -143,7 +142,8 @@ namespace WorkflowAddinCommon
                 CompleteTaskButton.Enabled = false;
             }
         }
-        private void UpdateNextStateComboBox(string source_id, WorkflowAddinRibbon MyRibbon)
+
+        private void UpdateNextStateComboBox(string source_id, OfficeConnectorExtensionAddinRibbon MyRibbon)
         {
 
             Item Document = inn.applyAML(AddtoItem(Settings.Default.getStateName, "config_id", source_id));
@@ -176,7 +176,7 @@ namespace WorkflowAddinCommon
 
         }
 
-        public void Complete_Activity(Core.DocumentProperties properties, WorkflowAddinRibbon MyRibbon)
+        public void Complete_Activity(Core.DocumentProperties properties, OfficeConnectorExtensionAddinRibbon MyRibbon)
         {
             List<Core.DocumentProperty> propertylist = properties.Cast<Core.DocumentProperty>().ToList();
             bool PrimaryLinkItemIdexist = propertylist.Where(x => x.Name == Settings.Default.arasPrimaryLinkItemId).Any();
@@ -198,7 +198,7 @@ namespace WorkflowAddinCommon
             }
         }
 
-        public void Complete_Promote(Core.DocumentProperties properties, WorkflowAddinRibbon MyRibbon)
+        public void Complete_Promote(Core.DocumentProperties properties, OfficeConnectorExtensionAddinRibbon MyRibbon)
         {
             //execute the AML to promote
             if ((inn = Connect_to_Aras(MyRibbon)) != null)
@@ -224,7 +224,7 @@ namespace WorkflowAddinCommon
 
         }
 
-        public Innovator Connect_to_Aras(WorkflowAddinRibbon MyRibbon)
+        public Innovator Connect_to_Aras(OfficeConnectorExtensionAddinRibbon MyRibbon)
         {
 
             string url = "";
@@ -274,8 +274,7 @@ namespace WorkflowAddinCommon
             }
         }
 
-    
-        public void Updatelabels(Core.DocumentProperties properties, WorkflowAddinRibbon MyRibbon)
+        public void Updatelabels(Core.DocumentProperties properties, OfficeConnectorExtensionAddinRibbon MyRibbon)
         {
 
             UpdateLifeCycleRibbonName(properties[Settings.Default.ArasDocumentId].Value, MyRibbon.LifeCycleRibbonLabel);

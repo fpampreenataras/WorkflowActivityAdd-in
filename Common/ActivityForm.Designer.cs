@@ -1,4 +1,4 @@
-﻿namespace WorkflowAddinCommon
+﻿namespace OfficeConnectorExtensionCommon
 {
     partial class ActivityForm
     {

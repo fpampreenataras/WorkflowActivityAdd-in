@@ -1,13 +1,13 @@
-﻿namespace WorkflowAddinCommon
+﻿namespace OfficeConnectorExtensionCommon
 {
-    partial class WorkflowAddinRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
+    partial class OfficeConnectorExtensionAddinRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        public WorkflowAddinRibbon(Microsoft.Office.Tools.Ribbon.RibbonFactory factory)
+        public OfficeConnectorExtensionAddinRibbon(Microsoft.Office.Tools.Ribbon.RibbonFactory factory)
             : base(factory)
         {
             InitializeComponent();

@@ -17,10 +17,10 @@ using Common.Properties;
 //  4. Update the row of CBP Names.
 //  3. Get all the Parameters of the associate document and populate options for each CBP Name.
 //      Don't know how to do that yet.
-namespace WorkflowAddinCommon
+namespace OfficeConnectorExtensionCommon
 {
 
-    public partial class WorkflowAddinRibbon
+    public partial class OfficeConnectorExtensionAddinRibbon
     {
 
         private void WorkflowAddinRibbon_load(object sender, RibbonUIEventArgs e)

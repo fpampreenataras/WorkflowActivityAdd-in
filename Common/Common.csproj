@@ -170,11 +170,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Utilities.cs" />
-    <Compile Include="WorkflowAddinRibbon.cs">
+    <Compile Include="OfficeConnectorExtensionAddinRibbon.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="WorkflowAddinRibbon.Designer.cs">
-      <DependentUpon>WorkflowAddinRibbon.cs</DependentUpon>
+    <Compile Include="OfficeConnectorExtensionAddinRibbon.Designer.cs">
+      <DependentUpon>OfficeConnectorExtensionAddinRibbon.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ActivityForm.resx">
       <DependentUpon>ActivityForm.cs</DependentUpon>
@@ -192,8 +192,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="WorkflowAddinRibbon.resx">
-      <DependentUpon>WorkflowAddinRibbon.cs</DependentUpon>
+    <EmbeddedResource Include="OfficeConnectorExtensionAddinRibbon.resx">
+      <DependentUpon>OfficeConnectorExtensionAddinRibbon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Common_TemporaryKey.pfx" />
