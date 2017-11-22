@@ -25,7 +25,7 @@
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>ExcelAddIn1</RootNamespace>
-    <AssemblyName>Workflow Addin</AssemblyName>
+    <AssemblyName>Office Connector Extension Addin</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <IsWebBootstrapper>False</IsWebBootstrapper>
@@ -38,10 +38,10 @@
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
-    <ProductName>Workflow Addin</ProductName>
+    <ProductName>Office Connector Extension Addin</ProductName>
     <PublisherName />
     <SupportUrl />
-    <FriendlyName>Workflow Addin</FriendlyName>
+    <FriendlyName>Office Connector Extension Addin</FriendlyName>
     <OfficeApplicationDescription />
     <LoadBehavior>3</LoadBehavior>
   </PropertyGroup>
