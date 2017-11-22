@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{FB915995-AFC5-464C-817A-75F5C605EA14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowAddinExcel", "ExcelAddIn1\WorkflowAddinExcel.csproj", "{E750B837-385B-48B1-8286-B401BF96379C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeConnectorExtensionAddinExcel", "ExcelAddIn1\OfficeConnectorExtensionAddinExcel.csproj", "{E750B837-385B-48B1-8286-B401BF96379C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowAddinWord", "WordAddIn1\WorkflowAddinWord.csproj", "{B308D1AF-7AD3-4169-9EB5-B009A47C4EBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeConnectorExtensionAddinWord", "WordAddIn1\OfficeConnectorExtensionAddinWord.csproj", "{B308D1AF-7AD3-4169-9EB5-B009A47C4EBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

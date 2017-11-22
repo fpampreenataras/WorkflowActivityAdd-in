@@ -79,7 +79,7 @@
             this.WorkflowTab.Groups.Add(this.ActivityGroup);
             this.WorkflowTab.Groups.Add(this.LifeCycleGroup);
             this.WorkflowTab.Groups.Add(this.WorkflowStatusGroup);
-            this.WorkflowTab.Label = "Workflow Addin";
+            this.WorkflowTab.Label = "Office Connector Extension";
             this.WorkflowTab.Name = "WorkflowTab";
             // 
             // ActivityGroup
