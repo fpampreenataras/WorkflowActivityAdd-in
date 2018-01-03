@@ -29,7 +29,8 @@ There is a "Common" project that contains the Office ribbon and utilities to acc
 ### Install Steps
 
 1. Open OfficeConnectorExtension.sln in Visual Studio
-2
+2. Publish the version of the Office Product you want (OfficeConnectorExtensionAddinExcel or OfficeConnectorExtensionAddinWord)
+3. Install the Office Connector Extension with the published setup.exe file.
 
 ## Usage
 
